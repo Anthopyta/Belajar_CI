@@ -17,10 +17,14 @@
                     <label>Product Name</label>
                     <input type="text" class="form-control" name="product_name" placeholder="Product Name" value="<?php echo $product_name; ?>">
                 </div>
+                
                 <div class="form-group">
                     <label>Price</label>
-                    <input type="text" class="form-control" name="product_name" placeholder="Product Name" value="<?php echo $product_price; ?>">
+                    <input type="text" class="form-control" name="product_price" placeholder="Product Price" value="<?php echo $product_price; ?>">
                 </div>
+                
+                <input type="hidden" name="product_id" value="<?php echo $product_id?>">
+                <button type="submit" class="btn btn-primary">Update</button>
             </form>
         </div>
     </div>
